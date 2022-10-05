@@ -12,7 +12,7 @@ var sql = require("../db");
 //       });
 //   });
 
-router.get('/info', function(req, res) {
+router.get('/', function(req, res) {
   sql.query(
     `select * from test.emp`,
     (err, rows) => {
